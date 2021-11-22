@@ -18,25 +18,25 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp ESC>;
-        };
         combo_tab {
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp TAB>;
         };
+        combo_ALTGR {
+            timeout-ms = <50>;
+            key-positions = <4 5>;
+            bindings = <&sk RALT>;
+        };
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp ESC>;
+        };
         combo_lalt {
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&sk LALT>;
-        };
-        combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&kp LGUI>;
         };
         combo_equal {
             timeout-ms = <50>;
@@ -53,11 +53,6 @@
             key-positions = <28 29>;
             bindings = <&sk LCTRL>;
         };
-        combo_ALTGR {
-            timeout-ms = <50>;
-            key-positions = <4 5>;
-            bindings = <&sk RALT>;
-        };
     };
 
         keymap {
@@ -67,7 +62,7 @@
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&kp A &kp S &kp D &kp F &kp G 			        	&kp H &kp J  &kp K    &kp L   &kp SEMI 
-		&mt Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &kp SLASH 
+		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &kp SLASH 
           	    &mt LSHFT BSPC &kp DEL        	         	&kp RET &mt LMETA SPC   
 		>;
 		};
