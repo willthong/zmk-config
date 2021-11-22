@@ -10,8 +10,8 @@
 
 
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <300>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <300>;
 };
 
 / { 
@@ -23,54 +23,46 @@
             key-positions = <10 11>;
             bindings = <&kp ESC>;
         };
-        
-         combo_tab {
+        combo_tab {
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp TAB>;
         };
-        
-                    combo_lalt {
+        combo_lalt {
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&sk LALT>;
         };
-        
-                           combo_lgui {
+        combo_lgui {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp LGUI>;
         };
-        
-        
-           combo_rgui {
+        combo_rgui {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp RGUI>;
+            bindings = <&kp RGU>;
         };
         combo_equal {
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp EQUAL>;
-        }
+        };
         combo_apostrophe {
             timeout-ms = <50>;
             key-positions = <18 19>;
             bindings = <&kp APOS>;
-        }
+        };
         combo_CTRL {
             timeout-ms = <50>;
             key-positions = <28 29>;
             bindings = <&sk LCTRL>;
-        }
+        };
         combo_ALTGR {
             timeout-ms = <50>;
-            key-positions = <5 6>;
+            key-positions = <4 5>;
             bindings = <&sk RALT>;
-        }
-        
-
-        
+        };
     };
 
         keymap {
@@ -79,7 +71,7 @@
        		default_layer {
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G 			        	&kp H &kp J &kp K &kp L &kp SEMI 
+		&kp A &kp S &kp D &kp F &kp G 			        	&kp H &kp J  &kp K    &kp L   &kp SEMI 
 		&mt Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &kp SLASH 
           	    &mt LSHFT BSPC &kp DEL        	         	&kp RET &mt LMETA SPC   
 		>;
