@@ -28,27 +28,37 @@
             key-positions = <4 5>;
             bindings = <&sk RALT>;
         };
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp ESC>;
-        };
-        combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&sk LALT>;
-        };
         combo_equal {
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp EQUAL>;
+        };
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp ESC>;
         };
         combo_apostrophe {
             timeout-ms = <50>;
             key-positions = <18 19>;
             bindings = <&kp APOS>;
         };
-        combo_CTRL {
+        combo_shift {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&sk LSHFT>;
+        };
+        combo_alt {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&sk LALT>;
+        };
+        combo_gui {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&sk LSHFT>;
+        };
+        combo_ctrl {
             timeout-ms = <50>;
             key-positions = <28 29>;
             bindings = <&sk LCTRL>;
@@ -63,7 +73,7 @@
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&kp A &kp S &kp D &kp F &kp G 			        	&kp H &kp J  &kp K    &kp L   &kp SEMI 
 		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &kp SLASH 
-          	    &mt LSHFT BSPC &kp DEL        	         	&kp RET &mt LMETA SPC   
+          	         &kp BSPC &kp DEL        	         	&kp RET &kp SPC   
 		>;
 		};
 
