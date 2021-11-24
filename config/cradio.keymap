@@ -70,23 +70,18 @@
         };
 	combo_numl {
             timeout-ms = <50>;
-            key-positions = <30 31>;
+            key-positions = <26 30>;
             bindings = <&sl NUM>;
         };
         combo_viml {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <27 30>;
             bindings = <&sl VIM>;
         };
 	combo_funl {
             timeout-ms = <50>;
-            key-positions = <30 32>;
+            key-positions = <28 30>;
             bindings = <&sl FUN>;
-        };
-	combo_home {
-	    timeout-ms = <50>;
-            key-positions = <30 31 32 33>;
-            bindings = <&sl HOM>;
         };
     };
 
