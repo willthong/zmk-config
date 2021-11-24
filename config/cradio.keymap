@@ -108,10 +108,10 @@
 		
 		vim_layer {
 		bindings = <
-		&trans &trans &trans &kp END  &trans           		&kp HOME  &kp PG_UP &trans &trans &kp PSCRN 
-		&trans  &trans  &kp PG_DN  &trans  &trans 		&kp LEFT &kp DOWN  &kp UP  &kp RIGHT   &trans
-		&trans  &trans &trans &trans   &trans   	        &trans &trans &trans &trans  &trans
-					  &trans &trans  		&trans  &trans 
+		&trans &trans &trans    &kp END  &trans           	&kp HOME &kp PG_UP &trans &trans    &kp PSCRN 
+		&trans &trans &kp PG_DN &trans   &trans                 &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans
+		&trans &trans &trans    &trans   &trans                 &trans   &trans    &trans &trans    &trans
+					  &trans &trans  		&trans   &trans 
 		>;
 		};	
 		
