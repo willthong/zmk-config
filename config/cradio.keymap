@@ -83,11 +83,6 @@
             key-positions = <30 32>;
             bindings = <&sl fun_layer>;
         };
-	combo_funl {
-            timeout-ms = <50>;
-            key-positions = <30 32>;
-            bindings = <&sl fun_layer>;
-        };
     };
 
         keymap {
