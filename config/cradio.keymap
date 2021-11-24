@@ -108,18 +108,18 @@
 		
 		vim_layer {
 		bindings = <
-		&kp F1  &kp F2 &kp F3  &kp END  &kp F5    		&kp PSCRN  &kp PG_UP &kp F8 &kp F9 &kp F10 
-		&kp F11  &kp F12  &kp PG_DN  &trans  &trans 		&kp LEFT &kp DOWN  &kp UP  &kp RIGHT   &kp BKSP
-		&trans  &trans &kp LBKT &kp F4   &trans   	        &kp F6 &kp F7 &kp DOWN &kp UP  &kp RIGHT
-					  &trans &trans  		&kp SPC  &trans 
+		&trans &trans &trans &kp END  &trans           		&kp HOME  &kp PG_UP &trans &trans &PSCRN 
+		&trans  &trans  &kp PG_DN  &trans  &trans 		&kp LEFT &kp DOWN  &kp UP  &kp RIGHT   &trans
+		&trans  &trans &trans &trans   &trans   	        &trans &trans &trans &trans  &trans
+					  &trans &trans  		&trans  &trans 
 		>;
 		};	
 		
 		fun_layer {
 		bindings = <
-		&trans  &kp F7 &kp F8  &kp F9  &trans    		&kp HOME  &kp PG_UP &kp F8 &kp F9 &kp F10 
-		&trans  &kp F4  &kp F5  &F6  &trans 		&kp LEFT &kp DOWN  &kp UP  &kp RIGHT   &kp BKSP
-		&trans  &kp F1 &kp F2 &kp F3   &kp F12   	        &kp F6 &kp F7 &kp DOWN &kp UP  &kp RIGHT
+		&trans  &kp F7 &kp F8  &kp F9  &trans    		&trans &trans &trans &trans &trans
+		&trans  &kp F4  &kp F5  &kp F6  &trans 		        &trans &trans &trans &trans &trans
+		&trans  &kp F1 &kp F2 &kp F3   &kp F12   	        &trans &trans &trans &trans &trans
 					  &kp F10 &kp F11  		&kp SPC  &trans 
 		>;
 		};	
