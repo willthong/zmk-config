@@ -71,17 +71,17 @@
 	combo_numl {
             timeout-ms = <50>;
             key-positions = <26 30>;
-            bindings = <&sl NUM>;
+            bindings = <&mo NUM>;
         };
         combo_viml {
             timeout-ms = <50>;
             key-positions = <27 30>;
-            bindings = <&sl VIM>;
+            bindings = <&mo VIM>;
         };
 	combo_funl {
             timeout-ms = <50>;
             key-positions = <28 30>;
-            bindings = <&sl FUN>;
+            bindings = <&mo FUN>;
         };
     };
 
@@ -101,28 +101,29 @@
 		bindings = <
 		&kp K_PWR       &bt BT_PRV   &bt BT_CLR  &bt BT_NXT &kp LBKT           &kp RBKT  &kp N7 &kp N8 &kp N9 &kp MINUS 
 		&kp C_VOL_DN    &kp C_PREV   &kp C_PP    &kp C_NEXT &kp C_VOL_UP       &kp SLASH &kp N4  &kp N5 &kp N6  &kp PLUS 
-		&bootloader          &trans       &trans      &trans     &trans             &kp STAR  &kp N1 &kp N2 &kp N3  &kp DOT 
+		&bootloader     &kp NON_US_HASH &kp BSLH   &trans     &trans        &kp STAR  &kp N1 &kp N2 &kp N3  &kp DOT 
 					                           &trans  &trans      &kp RET &kp N0 
 		>;
 		};
 		
 		vim_layer {
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &trans &kp LCTL  				&kp SPC  &trans 
+		&kp F1  &kp F2 &kp F3  &kp END  &kp F5    		&kp PSCRN  &kp PG_UP &kp F8 &kp F9 &kp F10 
+		&kp F11  &kp F12  &kp PG_DN  &trans  &trans 		&kp LEFT &kp DOWN  &kp UP  &kp RIGHT   &kp BKSP
+		&trans  &trans &kp LBKT &kp F4   &trans   	        &kp F6 &kp F7 &kp DOWN &kp UP  &kp RIGHT
+					  &trans &trans  		&kp SPC  &trans 
 		>;
 		};	
 		
 		fun_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  					&trans &trans 
+		&trans  &kp F7 &kp F8  &kp F9  &trans    		&kp HOME  &kp PG_UP &kp F8 &kp F9 &kp F10 
+		&trans  &kp F4  &kp F5  &F6  &trans 		&kp LEFT &kp DOWN  &kp UP  &kp RIGHT   &kp BKSP
+		&trans  &kp F1 &kp F2 &kp F3   &kp F12   	        &kp F6 &kp F7 &kp DOWN &kp UP  &kp RIGHT
+					  &kp F10 &kp F11  		&kp SPC  &trans 
 		>;
 		};	
+			
         
 	};
 };
