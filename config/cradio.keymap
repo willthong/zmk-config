@@ -15,9 +15,9 @@
 };
 
 #define DEFAULT 0
-#define NUM   1
-#define VIM   2
-#define FUN   3
+#define NUM 1
+#define VIM 2
+#define FUN 3
 
 / { 
 
@@ -71,7 +71,7 @@
 	combo_numl {
             timeout-ms = <50>;
             key-positions = <30 31>;
-            bindings = <&sl num_layer>;
+            bindings = <&sl NUM>;
         };
         combo_viml {
             timeout-ms = <50>;
