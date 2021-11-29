@@ -23,30 +23,10 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp TAB>;
-        };
-        combo_ALTGR {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&sk RALT>;
-        };
         combo_esc {
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&lt 0 ESC>;
-        };
-        combo_apostrophe {
-            timeout-ms = <50>;
-            key-positions = <24 25>;
-            bindings = <&kp APOS>;
-        };
-        combo_shift {
-            timeout-ms = <50>;
-            key-positions = <25 26>;
-            bindings = <&sk LSHFT>;
         };
         combo_alt {
             timeout-ms = <50>;
@@ -56,14 +36,34 @@
         combo_gui {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            bindings = <&sk LMETA>;
+            bindings = <&sk LSHFT>;
         };
         combo_ctrl {
             timeout-ms = <50>;
             key-positions = <23 24>;
+            bindings = <&sk LMETA>;
+        };
+        combo_apostrophe {
+            timeout-ms = <50>;
+            key-positions = <25 26>;
+            bindings = <&kp APOS>;
+        };
+        combo_shift {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
             bindings = <&sk LCTRL>;
         };
-	combo_numl {
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&sk RALT>;
+        };
+        combo_ALTGR {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp TAB>;
+        };
+	    combo_numl {
             timeout-ms = <50>;
             key-positions = <26 30>;
             bindings = <&mo NUM>;
