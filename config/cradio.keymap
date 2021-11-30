@@ -66,7 +66,7 @@
 	    combo_numl {
             timeout-ms = <50>;
             key-positions = <26 30>;
-            bindings = <&sl, NUM>;
+            bindings = <&sl NUM>;
         };
         combo_viml {
             timeout-ms = <50>;
