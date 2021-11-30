@@ -63,19 +63,34 @@
             key-positions = <28 29>;
             bindings = <&kp TAB>;
         };
-	    combo_numl {
+	combo_lnum {
             timeout-ms = <50>;
-            key-positions = <26 30>;
+            key-positions = <23 30>;
             bindings = <&sl NUM>;
         };
-        combo_viml {
+        combo_lvim {
             timeout-ms = <50>;
-            key-positions = <27 30>;
+            key-positions = <22 30>;
             bindings = <&sl VIM>;
         };
-	combo_funl {
+	combo_lfun {
             timeout-ms = <50>;
-            key-positions = <28 30>;
+            key-positions = <24 30>;
+            bindings = <&sl FUN>;
+        };
+	combo_rnum {
+            timeout-ms = <50>;
+            key-positions = <26 33>;
+            bindings = <&sl NUM>;
+        };
+        combo_rvim {
+            timeout-ms = <50>;
+            key-positions = <27 33>;
+            bindings = <&sl VIM>;
+        };
+	combo_rfun {
+            timeout-ms = <50>;
+            key-positions = <28 33;
             bindings = <&sl FUN>;
         };
     };
