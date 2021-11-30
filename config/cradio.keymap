@@ -66,17 +66,17 @@
 	    combo_numl {
             timeout-ms = <50>;
             key-positions = <26 30>;
-            bindings = <&mo NUM>;
+            bindings = <&sl, NUM>;
         };
         combo_viml {
             timeout-ms = <50>;
             key-positions = <27 30>;
-            bindings = <&mo VIM>;
+            bindings = <&sl VIM>;
         };
 	combo_funl {
             timeout-ms = <50>;
             key-positions = <28 30>;
-            bindings = <&mo FUN>;
+            bindings = <&sl FUN>;
         };
     };
 
