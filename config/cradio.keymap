@@ -85,7 +85,7 @@
         };
 	combo_lfun {
             timeout-ms = <50>;
-            key-positions = <24 30>;
+            key-positions = <21 30>;
             bindings = <&sl FUN>;
         };
 	combo_lnumlock {
@@ -100,7 +100,7 @@
         };
 	combo_lfunlock {
             timeout-ms = <50>;
-            key-positions = <24 31>;
+            key-positions = <21 31>;
             bindings = <&tog FUN>;
         };
 	combo_rnum {
