@@ -40,7 +40,7 @@
         };
 	combo_shiftalt {
             timeout-ms = <50>;
-            key-positions = <26 27 28>;
+            key-positions = <26 27>;
             bindings = <&sk LSHFT>;
         };
         combo_meta {
@@ -55,7 +55,7 @@
         };
         combo_ctrl {
             timeout-ms = <50>;
-            key-positions = <26 27>;
+            key-positions = <26 27 28>;
             bindings = <&sk LCTRL>;
         };
 	combo_ctrlalt {
