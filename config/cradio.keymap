@@ -121,6 +121,29 @@
         };
     };
 
+    macros {
+        prev_word: prev_word {
+            label = "prev_word";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+        next_word: next_word {
+            label = "next_word";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+    };
+    
         keymap {
                 compatible = "zmk,keymap";
                 
@@ -144,19 +167,19 @@
 		
 		vim_layer {
 		bindings = <
-		&trans &trans &trans    &kp END  &trans           	&kp HOME &kp PG_UP &trans &trans    &kp PSCRN 
-		&trans &trans &kp PG_DN &trans   &trans                 &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans
-		&trans &trans &trans    &trans   &trans                 &trans   &trans    &trans &trans    &trans
+		&trans &next_word &trans    &kp END  &trans           	&kp HOME &kp PG_UP &trans &trans    &kp PSCRN 
+		&trans &trans     &kp PG_DN &trans   &trans             &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans
+		&trans &trans     &trans    &trans   &prev_word         &trans   &trans    &trans &trans    &trans
 					  &trans &trans  		&trans   &trans 
 		>;
 		};	
 		
 		fun_layer {
 		bindings = <
-		&trans  &kp F7 &kp F8 &kp F9 &trans    	        &trans &trans &trans &trans &trans
-		&trans  &kp F4 &kp F5 &kp F6 &trans             &trans &trans &trans &trans &trans
-		&trans  &kp F1 &kp F2 &kp F3 &kp F12   	        &trans &trans &trans &trans &trans
-					  &kp F10 &kp F11  	&trans  &trans 
+		&trans &trans &trans &trans &trans              &trans  &kp F7 &kp F8 &kp F9 &kp F10   
+		&trans &trans &trans &trans &trans              &trans  &kp F4 &kp F5 &kp F6 &kp F11  
+		&trans &trans &trans &trans &trans              &trans  &kp F1 &kp F2 &kp F3 &kp F12
+					  &trans &trans      	&trans  &trans 
 		>;
 		};	
 			
