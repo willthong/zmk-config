@@ -20,7 +20,7 @@
 #define NUM 1
 #define VIM 2
 #define FUN 3
-#define LOC 4
+#define MSE 4
 
 / { 
 
@@ -121,9 +121,9 @@
             key-positions = <28 33>;
             bindings = <&sl FUN>;
         };
-	combo_lock {
-            key-positions = <2 7 20 29 30 33>;
-            bindings = <&to LOC>;
+	combo_mouse {
+            key-positions = <10 11>;
+            bindings = <&to MSE>;
         };
     };
 
@@ -186,6 +186,15 @@
 		&trans &trans &trans &trans               &trans                          &trans  &kp F4 &kp F5 &kp F6 &kp F11  
 		&trans &trans &trans &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC            &trans  &kp F1 &kp F2 &kp F3 &kp F12
                                                                 &trans &trans             &trans &trans
+		>;
+		};
+		
+		mse_layer {
+		bindings = <
+		&trans &trans &trans           &trans &trans                          &trans         &mwh SCROLL_UP &trans       &trans          &trans   
+		&trans &trans &mwh SCROLL_DOWN &trans &trans                          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans   
+		&trans &trans &trans           &trans &trans                          &trans         &trans         &trans       &trans          &trans
+                                           &trans &trans             &mkp RCLK &mkp LCLK
 		>;
 		};
         
