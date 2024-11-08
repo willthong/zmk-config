@@ -175,7 +175,7 @@
 		bindings = <
 		&trans      &next_word &trans    &kp END  &trans           	&kp HOME &kp PG_UP &trans &trans    &kp PSCRN 
 		&trans      &trans     &kp PG_DN &trans   &trans             &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans
-		&BOOTLOADER &trans     &trans    &trans   &prev_word         &trans   &trans    &trans &trans    &BOOTLOADER
+		&bootloader &trans     &trans    &trans   &prev_word         &trans   &trans    &trans &trans    &bootloader
 					  &trans &trans  		&trans   &trans 
 		>;
 		};	
