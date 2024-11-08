@@ -164,7 +164,7 @@
 
        		num_layer {
 		bindings = <
-	        &kp K_PWR      &bt BT_PRV      &bt BT_CLR  &bt BT_NXT &kp LBKT           &kp RBKT  &kp N7 &kp N8 &kp N9 &kp MINUS 
+	        &trans         &bt BT_PRV      &bt BT_CLR  &bt BT_NXT &kp LBKT           &kp RBKT  &kp N7 &kp N8 &kp N9 &kp MINUS 
 		&kp C_VOL_DN   &kp C_PREV      &kp C_PP    &kp C_NEXT &kp C_VOL_UP       &kp SLASH &kp N4  &kp N5 &kp N6  &kp PLUS 
 		&kp GRAVE      &kp NON_US_HASH &kp NON_US_BSLH    &trans  &kp EQUAL      &kp STAR  &kp N1 &kp N2 &kp N3  &kp DOT 
 				                                     &trans  &trans      &kp RET &kp N0 
@@ -173,9 +173,9 @@
 		
 		vim_layer {
 		bindings = <
-		&trans &next_word &trans    &kp END  &trans           	&kp HOME &kp PG_UP &trans &trans    &kp PSCRN 
-		&trans &trans     &kp PG_DN &trans   &trans             &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans
-		&trans &trans     &trans    &trans   &prev_word         &trans   &trans    &trans &trans    &trans
+		&trans      &next_word &trans    &kp END  &trans           	&kp HOME &kp PG_UP &trans &trans    &kp PSCRN 
+		&trans      &trans     &kp PG_DN &trans   &trans             &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans
+		&BOOTLOADER &trans     &trans    &trans   &prev_word         &trans   &trans    &trans &trans    &BOOTLOADER
 					  &trans &trans  		&trans   &trans 
 		>;
 		};	
